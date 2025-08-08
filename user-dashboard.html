@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard_page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style-folder.css/user-dashboard-style.css">
 </head>
+
 <body>
+    <div class="nav-bar">
+        <div class="logo">EPLQ</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Search Query</a></li>
+                <li><a href="#">Logs</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
     <section class="EPLQ-dashboard-page">
         <div class="dashboard-container">
-            <div class="nav-bar">
-                <h2 class="logo-img" alt="logo-img"><EQLP></h2>
-                <nav class="nav-content">
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Upload Data</a></li>
-                        <li><a href="#">Search Query</a></li>
-                        <li><a href="#">Logs</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </nav>
-            </div>
-
             <div class="main">
                 <header class="heading">
                     <h1>Welcome</h1>
+                    <p>Here,s the dashboard overview</p>
                     <span class="user-badge">Secure Access</span>
                 </header>
 
-                <section class="dashboard">
+                <div class="profile-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                    <h2>name of user</h2>
+                    <p>email of user</p>
+                    <p><strong>Account Type:</strong> Standard User</p>
+                </div>
+
+                <section class="dashboard-grid">
                     <div class="card">
                         <h3>Total Queries</h3>
                         <p>132</p>
                     </div>
-                     <div class="card">
+                    <div class="card">
                         <h3>Successful Results</h3>
                         <p>122</p>
                     </div>
-                     <div class="card">
+                    <div class="card">
                         <h3>Logs Stored</h3>
                         <p>57</p>
                     </div>
                 </section>
 
-                <section class="recent-activity">
-                  <h2>Recent Logs</h2>
-        <ul id="log-list">
-          <!-- Fetched logs will go here -->
-        </ul>
+                <div class="map-section">
+                    <h2>Your Location Queries</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/1200px-World_map_blank_without_borders.svg.png"
+                        alt="Map Illustration" class="map-img">
+                </div>
+
+                <section class="recent-queries">
+                    <h2>Recent Queries</h2>
+                    <ul>
+                        <li>Search: Hospitals near Patna <span>08-Aug-2025</span></li>
+                        <li>Search: Restaurants near Delhi <span>05-Aug-2025</span></li>
+                        <li>Search: Schools in Ranchi <span>01-Aug-2025</span></li>
+                        <li>Search: Parks in Kolkata <span>29-Jul-2025</span></li>
+                    </ul>
                 </section>
             </div>
         </div>
     </section>
 </body>
+
 </html>>
