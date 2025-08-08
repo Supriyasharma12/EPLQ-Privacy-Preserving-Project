@@ -3,27 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPLQ Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="/style-folder.css/index-style.css">
+    <!-- Lottie Animation Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-    <section class="EPLQ-login-page">
-    <div class="hero-container">
-        <div class="login-page-heading">
-            <h1>EPLQ</h1>
-            <p>Secure Location-Based Query System</p>
+    <header class="nav-bar">
+        <div class="logo">EQLP</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="nav-btn">Login</button></li>
+            </ul>
+            <!-- <button class="nav-btn">Login</button> -->
+        </nav>
+    </header>
+    <section class="index-hero-page">
+        <div class="hero-text">
+            <h1>Efficient & Privacy-preserving Location Queries</h1>
+            <p>Secure spatial range queries with predicate-only encryption for maximum privacy and performance.</p>
+            <a href="dashboard.html" class="btn">Get Started</a>
         </div>
-        <form action="">
-            <input type="email" placeholder="Enter your email">
-            <input type="password" placeholder="Enter the password">
-            <div class="bottom">
-                <button onclick="login()" class="btn">Login</button>
-                <p class="bottom-text">New to the website,<button onclick="register()" class="btn secondry">Register</button></p>
-                <!-- <button onclick="register()" class="btn secondry">Register</button> -->
-            </div>
-        </form>
-    </div>
+        <div class="hero-illustration">
+            <lottie-player 
+                src="https://assets10.lottiefiles.com/packages/lf20_t9gkkhz4.json"  
+                background="transparent"  
+                speed="1"  
+                style="width: 100%; height: 100%;"  
+                loop  
+                autoplay>
+            </lottie-player>
+        </div>
     </section>
-    <script src="script.js"></script>
+
+<!-- Map Illustration Section -->
+    <section class="map-preview-section">
+        <h2>Explore Locations Easily</h2>
+        <p>Search, view, and interact with locations securely and privately.</p>
+        <div class="map-preview">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/OpenStreetMap_logo.svg/800px-OpenStreetMap_logo.svg.png" alt="Map Preview">
+        </div>
+        <a href="map.html" class="btn secondary-btn">Go to Map</a>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose EPLQ?</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Secure">
+                <h3>Privacy First</h3>
+                <p>Our encryption ensures that your data never falls into the wrong hands.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Speed">
+                <h3>Lightning Fast</h3>
+                <p>Get location results in milliseconds with our optimized algorithms.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/4105/4105448.png" alt="Accuracy">
+                <h3>Accurate Results</h3>
+                <p>Enjoy precise and relevant search results every time you query.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 EPLQ Project | Built with ❤️ for secure data queries</p>
+    </footer>
 </body>
 </html>
