@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPLQ Login/Register Page</title>
+    <link rel="stylesheet" href="style-folder.css/authentication-style.css">
+</head>
+<body>
+    <section class="EPLQ-login-page">
+    <div class="hero-container">
+
+        <div class="auth-heading">
+            <h1>EPLQ</h1>
+            <p>Secure Location-Based Query System</p>
+        </div>
+
+        <form id="loginform">
+            <input type="hidden" id="login-role" name="role">
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter the password" required>
+            <div class="bottom">
+                <button type="submit" class="btn primary">Login</button>
+                <p class="bottom-text">Don't have an account</p><button type="submit" id="shoeregister" class="btn secondry">Register</button>
+                <!-- <button onclick="register()" class="btn secondry">Register</button> -->
+            </div>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerform" style="display: none;">
+            <input type="hidden" id="register" name="role">
+            <input type="text" placeholder="Enter your full name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Create a password" required>
+            <div class="bottom">
+                <button type="submit" class="btn primary">Register</button>
+                <p class="bottom-text">
+                    Already have an account?
+                    <button type="submit" id="showLogin" class="btn secondary">Login</button>
+                </p>
+            </div>
+        </form>
+    
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
