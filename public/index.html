@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-page</title>
-    <link rel="stylesheet" href="/style-folder.css/index-style.css">
+    <link rel="stylesheet" href="./style-folder.css/index-style.css">
     <!-- Lottie Animation Script -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -23,11 +23,15 @@
                 <li><a href="#">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="login-dropdown">
-                    <a href="authentication.html?form=login" class="nav-btn" id="login-btn">Login</a>
+                    <a href="#" class="nav-btn" id="login-btn">Login</a>
                     <div class="drop-down-menu" id="drop-down-menu">
                         <a href="authentication.html?form=login&role=user">User</a>
                         <a href="authentication.html?form=login&role=admin">Admin</a>
                     </div>
+                    <!-- <div class="drop-down-menu" id="drop-down-menu">
+                        <a href="#" onclick="setRole('User')">User</a>
+                        <a href="#" onclick="setRole('Admin')">Admin</a>
+                    </div> -->
                 </li>
             </ul>
         </nav>
@@ -81,7 +85,7 @@
     <footer>
         <p>© 2025 EPLQ Project | Built with ❤️ for secure data queries</p>
     </footer>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
